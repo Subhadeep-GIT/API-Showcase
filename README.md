@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+LinkStack Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+LinkStack Demo is a real-life implementation showcasing two APIs: the Excuse API and the HerThoughts API. This demo project is designed to give users access to random excuses and thoughts, grouped by categories, with a seamless user interface.
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+1. Excuse API:
+	•	Random Excuse Generator: Allows users to fetch a random excuse from various categories such as “romantic”, “work”, “school”, etc.
+	•	Category-based Excuse: Users can select a specific category to fetch an excuse from that category.
 
-### `npm start`
+2. HerThoughts API:
+	•	Category Fetching: Displays a list of thought categories (e.g., “love”, “hope”, “nostalgia”, etc.) fetched from the HerThoughts API.
+	•	Random Thought Generator: Fetches a random thought from a selected category.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Technologies Used
+	•	React: Frontend framework used for building the user interface.
+	•	API Integration: Integration with two APIs — the Excuse API and HerThoughts API — to fetch data for excuses and thoughts.
+	•	CSS: For styling the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Excuse API:
 
-### `npm run build`
+The Excuse API provides random and category-specific excuses.
+	•	Endpoint: https://excuses-api.vercel.app/api/excuses
+	•	GET /random: Fetch a random excuse.
+	•	GET /category/{category}: Fetch an excuse based on the selected category (e.g., “work”, “romantic”, etc.).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. HerThoughts API:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The HerThoughts API provides random thoughts grouped by categories.
+	•	Endpoint: https://herthoughts-api.vercel.app/api/thoughts
+	•	GET /: Fetch all available categories.
+	•	GET /?category={category}&random=true: Fetch a random thought from a specific category.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+How to Use
 
-### `npm run eject`
+Random Excuse
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Click the “🎲 Random Excuse” button to fetch a random excuse from the Excuse API.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Get Excuse by Category
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Click any of the category buttons (e.g., “romantic”, “work”, “school”, etc.) to fetch an excuse from the corresponding category.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+HerThoughts API
+	•	Load Categories: Click the “Load Categories” button to fetch the list of thought categories from the HerThoughts API.
+	•	Select Category: Choose a category from the dropdown menu to fetch a random thought from that category.
 
-## Learn More
+Example Output
+	•	Random Excuse: "Sorry, I was caught in traffic."
+	•	Category-based Excuse: "I couldn't make it because of work."
+	•	Random Thought: "Hope is the thing with feathers."
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Conclusion
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project serves as a reference implementation showcasing the use of the Excuse API and HerThoughts API. It demonstrates how APIs can be integrated into a real-world web application to provide dynamic, categorized content.
